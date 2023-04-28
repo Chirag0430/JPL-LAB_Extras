@@ -2,7 +2,7 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
 
-public class Calculator_Swing extends JFrame implements ActionListener {
+public class a24_Calculator_Swing extends JFrame implements ActionListener {
     private JTextField display;
     private JButton[] buttons;
     private String[] buttonLabels = {
@@ -14,7 +14,7 @@ public class Calculator_Swing extends JFrame implements ActionListener {
     private double firstNum = 0.0;
     private String operation = "";
 
-    public Calculator_Swing() {
+    public a24_Calculator_Swing() {
         setTitle("Calculator");
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setSize(300, 400);
@@ -71,6 +71,6 @@ public class Calculator_Swing extends JFrame implements ActionListener {
     }
 
     public static void main(String[] args) {
-        new Calculator_Swing();
+        new a24_Calculator_Swing();
     }
 }

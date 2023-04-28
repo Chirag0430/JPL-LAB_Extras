@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Four_Equal {
+public class a01_Four_Equal {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
 

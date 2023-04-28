@@ -1,4 +1,4 @@
-public class Armstrong {
+public class a16_Armstrong {
     public static void main(String[] args) {
         int number = 153;
         int originalNumber = number;

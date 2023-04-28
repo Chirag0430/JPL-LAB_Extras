@@ -1,5 +1,5 @@
 
-public class Boolean_DataType {
+public class a15_Boolean_DataType {
     public static void main(String[] args) {
         int n = 50;
         boolean isPrime = true;

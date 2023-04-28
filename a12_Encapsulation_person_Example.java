@@ -22,7 +22,7 @@ class Person {
     }
 }
 
-public class Encapsulation_person_Example {
+public class a12_Encapsulation_person_Example {
     public static void main(String[] args) {
         Person person = new Person();
         person.setName("John Doe");

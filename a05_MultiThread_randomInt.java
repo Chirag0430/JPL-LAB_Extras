@@ -48,7 +48,7 @@ class CubeThread extends Thread {
     }
 }
 
-public class MultiThread_randomInt {
+public class a05_MultiThread_randomInt {
     public static void main(String args[]) {
         RandomNumberThread rnThread = new RandomNumberThread();
         rnThread.start();

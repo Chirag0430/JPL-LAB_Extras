@@ -91,7 +91,7 @@ class motorcycle extends vehicle {
         System.out.println("Fuel type : " + fuel_type + "\n\n\n");
     }
 }
-public class Car_Truck {
+public class a03_Car_Truck {
     public static void main(String[] args) {
         car c = new car();
         motorcycle m = new motorcycle();

@@ -3,10 +3,10 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-public class Traffic {
+public class a10_Traffic {
     private JLabel label;
 
-    public Traffic() {
+    public a10_Traffic() {
         // Create a new JFrame
         JFrame frame = new JFrame("Traffic Light Example");
 
@@ -66,6 +66,6 @@ public class Traffic {
     }
 
     public static void main(String[] args) {
-        new Traffic();
+        new a10_Traffic();
     }
 }

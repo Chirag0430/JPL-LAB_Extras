@@ -31,7 +31,7 @@ class MyThread implements Runnable {
     }
 }
 
-public class MultiThread_Alive {
+public class a20_MultiThread_Alive {
     public static void main(String[] args) throws InterruptedException {
         MyThread thread1 = new MyThread();
         MyThread thread2 = new MyThread();

@@ -1,6 +1,4 @@
-import java.io.*;
-
-public class Matrix_Multiplication {
+public class a18_Matrix_Multiplication {
     public static void main(String[] args) {
         // Define the matrices
         int[][] matrix1 = {{1, 2, 3}, {4, 5, 6}, {7, 8, 9}};

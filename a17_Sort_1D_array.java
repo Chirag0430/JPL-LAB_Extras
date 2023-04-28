@@ -1,4 +1,4 @@
-public class Sort_1D_array {
+public class a17_Sort_1D_array {
     public static void main(String[] args) {
         int[] array = {5, 2, 8, 12, 1, 7};
         int n = array.length;

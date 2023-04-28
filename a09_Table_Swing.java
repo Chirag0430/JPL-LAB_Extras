@@ -3,13 +3,13 @@ import javax.swing.table.DefaultTableModel;
 import java.awt.*;
 import java.util.ArrayList;
 
-public class Table_Swing {
+public class a09_Table_Swing {
     public static void main(String[] args) {
         // Create an ArrayList of Students
         ArrayList<Student> students = new ArrayList<Student>();
-        students.add(new Student(1, "John Doe", 85.5));
-        students.add(new Student(2, "Jane Smith", 92.0));
-        students.add(new Student(3, "Bob Johnson", 75.3));
+        students.add(new Student(1, "Aayush", 85.5));
+        students.add(new Student(2, "Shinchan", 92.0));
+        students.add(new Student(3, "Nobita", 75.3));
 
         // Create a new JFrame
         JFrame frame = new JFrame("Student Table Example");

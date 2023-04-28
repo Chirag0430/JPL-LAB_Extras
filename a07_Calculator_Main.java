@@ -46,7 +46,7 @@ class Complex {
     }
 }
 
-public class Calculator_Main {
+public class a07_Calculator_Main {
     public static void main(String[] args) {
         Calculator calc = new Calculator();
 

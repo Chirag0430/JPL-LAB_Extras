@@ -2,12 +2,12 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
 
-public class PersonalDetailsGUI extends JFrame implements ActionListener {
+public class a26_PersonalDetailsGUI extends JFrame implements ActionListener {
     JLabel nameLabel, ageLabel, emailLabel;
     JTextField nameTextField, ageTextField, emailTextField;
     JButton submitButton;
 
-    public PersonalDetailsGUI() {
+    public a26_PersonalDetailsGUI() {
         setTitle("Personal Details");
         setSize(300, 200);
         setLocationRelativeTo(null);
@@ -53,6 +53,6 @@ public class PersonalDetailsGUI extends JFrame implements ActionListener {
     }
 
     public static void main(String[] args) {
-        new PersonalDetailsGUI();
+        new a26_PersonalDetailsGUI();
     }
 }

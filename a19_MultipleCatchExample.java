@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class MultipleCatchExample {
+public class a19_MultipleCatchExample {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 

@@ -20,7 +20,7 @@ class C implements A, B {
     }
 }
 
-public class MultipleInheritance {
+public class a25_MultipleInheritance {
     public static void main(String[] args) {
         C obj = new C();
         obj.methodA();

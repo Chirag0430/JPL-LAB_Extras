@@ -25,7 +25,7 @@ class Student1 {
     }
 }
 
-public class Name_City_Age {
+public class a04_Name_City_Age {
     public static void main(String[] args) {
         Student1 s1 = new Student1();
         System.out.println("Enter details of student 1:");

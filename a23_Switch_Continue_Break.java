@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Switch_Continue_Break{
+public class a23_Switch_Continue_Break {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 

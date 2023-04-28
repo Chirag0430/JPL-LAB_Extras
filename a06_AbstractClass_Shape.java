@@ -46,7 +46,7 @@ class Circle extends Shape {
     }
 }
 
-public class AbstractClass_Shape {
+public class a06_AbstractClass_Shape {
     public static void main(String[] args) {
         Shape rectangle = new Rectangle(5, 7);
         Shape triangle = new Triangle(8, 4);

@@ -1,6 +1,6 @@
 import java.awt.*;
 
-public class SimpleApplication_AWT {
+public class a08_SimpleApplication_AWT {
     public static void main(String[] args) {
         // Create a new Frame
         Frame f = new Frame("My Window");
