@@ -1,71 +1,77 @@
-import javax.swing.*;
-import java.awt.*;
+package practice;
+
+import java.awt.Color;
+import java.awt.Font;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import javax.swing.ButtonGroup;
+import javax.swing.JFrame;
+import javax.swing.JPanel;        //CFAABJJJJ
+import javax.swing.JRadioButton;
+import javax.swing.JLabel;
 
-public class a10_Traffic {
-    private JLabel label;
+class Traffic implements ActionListener {
 
-    public a10_Traffic() {
-        // Create a new JFrame
-        JFrame frame = new JFrame("Traffic Light Example");
+    JFrame f;
+    JPanel panel;
+    JRadioButton redButton, yellowButton, greenButton;
+    ButtonGroup buttonGroup;
+    JLabel label;
 
-        // Create a new JPanel
-        JPanel panel = new JPanel(new GridLayout(4, 1));
+    Traffic()
+    {
+        f = new JFrame("Traffic Light");
+        f.setSize(300, 400);
+        f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
-        // Create three radio buttons for the traffic lights
-        JRadioButton redButton = new JRadioButton("Red");
-        JRadioButton yellowButton = new JRadioButton("Yellow");
-        JRadioButton greenButton = new JRadioButton("Green");
+        panel = new JPanel();
+        panel.setLayout(null);
 
-        // Add the radio buttons to a ButtonGroup
-        ButtonGroup buttonGroup = new ButtonGroup();
+        redButton = new JRadioButton("Red");
+        redButton.setBounds(100, 50, 100, 30);
+        redButton.addActionListener(this);
+
+        yellowButton = new JRadioButton("Yellow");
+        yellowButton.setBounds(100, 100, 100, 30);
+        yellowButton.addActionListener(this);
+
+        greenButton = new JRadioButton("Green");
+        greenButton.setBounds(100, 150, 100, 30);
+        greenButton.addActionListener(this);
+
+        buttonGroup = new ButtonGroup();
         buttonGroup.add(redButton);
         buttonGroup.add(yellowButton);
         buttonGroup.add(greenButton);
 
-        // Create a new JLabel for the message
-        label = new JLabel("", JLabel.CENTER);
-        label.setOpaque(true);
+        label = new JLabel("");
+        label.setBounds(100, 200, 100, 100);
 
-        // Add the radio buttons and the JLabel to the panel
+
         panel.add(redButton);
         panel.add(yellowButton);
         panel.add(greenButton);
         panel.add(label);
 
-        // Create an ActionListener for the radio buttons
-        ActionListener listener = new ActionListener() {
-            public void actionPerformed(ActionEvent e) {
-                // Get the selected radio button
-                JRadioButton button = (JRadioButton) e.getSource();
+        f.add(panel);
+        f.setVisible(true);
+    }
 
-                // Set the message text and color based on the selected button
-                if (button == redButton) {
-                    label.setText("STOP");
-                    label.setBackground(Color.RED);
-                } else if (button == yellowButton) {
-                    label.setText("READY");
-                    label.setBackground(Color.YELLOW);
-                } else if (button == greenButton) {
-                    label.setText("GO");
-                    label.setBackground(Color.GREEN);
-                }
-            }
-        };
-
-        // Add the ActionListener to the radio buttons
-        redButton.addActionListener(listener);
-        yellowButton.addActionListener(listener);
-        greenButton.addActionListener(listener);
-
-        // Set the size of the JFrame and make it visible
-        frame.setSize(300, 200);
-        frame.add(panel);
-        frame.setVisible(true);
+    public void actionPerformed(ActionEvent e) {
+        if (e.getSource() == redButton) {
+            label.setText("Stop");
+            label.setForeground(Color.RED);
+        } else if (e.getSource() == yellowButton) {
+            label.setText("Ready");
+            label.setForeground(Color.YELLOW);
+        } else if (e.getSource() == greenButton) {
+            label.setText("Go");
+            label.setForeground(Color.GREEN);
+        }
     }
 
     public static void main(String[] args) {
-        new a10_Traffic();
-    }
+        Traffic traffic = new Traffic();
+}
+
 }
