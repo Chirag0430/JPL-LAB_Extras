@@ -1,5 +1,9 @@
-public class Main {
-    public static void main(String[] args) {
-        System.out.println("Hello world!");
-    }
-}
+import java.applet.Applet;  
+import java.awt.Graphics;  
+public class First extends Applet{  
+  
+public void paint(Graphics g){  
+g.drawString("welcome to applet",150,150);  
+}  
+  
+}  
